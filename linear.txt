@@ -1,0 +1,31 @@
+
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+int a[5],i,num,flag=-1,control;
+clrscr();
+printf("How mwny records[1-5]");
+scanf("%d",&control);
+printf("enter the value of arrays");
+for(i=0;i<5;i++)
+  {
+  scanf("%d",&a[i]);
+  }
+  printf("Enter the number to be search");
+  scanf("%d",&num);
+  for(i=0;i<5;i++)
+   {
+    if(a[i]==num)
+	  {
+ printf("Number is found at position= %d",i+1);
+	  flag=1;
+	  break;
+	  }
+   }
+    if(flag==-1)
+      {
+       printf("number is not found");
+      }
+getch();
+}
